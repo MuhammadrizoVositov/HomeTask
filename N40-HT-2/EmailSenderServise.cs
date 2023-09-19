@@ -36,6 +36,7 @@ namespace N40_HT_2
                 {
                     _isSending = true;
                     Task.Run(() => SendEmail());
+                    // o'zgarish
                 }
             }
         }
@@ -61,8 +62,5 @@ namespace N40_HT_2
                 }
             }
         }
-        
-            
-
     }
 }
