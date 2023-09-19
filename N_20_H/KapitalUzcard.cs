@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace N_20_H
 {
-    internal class KapitalUzcard
+    public class KapitalUzcard : IDebidCard
     {
+        public int CardNumber { get ; set ; }
+        public string BankName { get; set; }
+        public decimal Amount { get; set; }
     }
 }
