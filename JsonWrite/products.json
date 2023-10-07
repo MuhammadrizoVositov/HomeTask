@@ -1,0 +1,33 @@
+[
+  {
+    "Id": 0,
+    "Name": "Gosht",
+    "Category": "Qoyniki",
+    "Price": 90000
+  },
+  {
+    "Id": 1,
+    "Name": "Gosht",
+    "Category": "Molniki",
+    "Price": 70000
+  },
+  {
+    "Id": 2,
+    "Name": "Gosht",
+    "Category": "Tovuqniki",
+    "Price": 450000
+  },
+  {
+    "Id": 3,
+    "Name": "Gosht",
+    "Category": "Baliqniki",
+    "Price": 120000
+  },
+  {
+    "Id": 1,
+    "Name": "ssss",
+    "Category": "qwerty",
+    "Price": 333
+  }
+
+]
