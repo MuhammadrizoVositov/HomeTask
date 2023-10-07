@@ -18,12 +18,10 @@ namespace First.WebApi.Repository
             _dataContext = dataContext;
         }
 
-        ////var test = new FileSet<Product, int>(Directory.GetCurrentDirectory(), null, null);
-        //private int next_id = 1;
-
         public async ValueTask<Product> AddAsync(Product item)
         {
-             await _dataContext.Products.AddAsync(item);
+            await _dataContext.Products.AddAsync(item);
+
             await _dataContext.Products.SaveChangesAsync();
             return item;
         }
@@ -65,6 +63,12 @@ namespace First.WebApi.Repository
             await _dataContext.Products.SaveChangesAsync();
 
             return item;
+        }
+        private bool IsValid(Product product)
+        {
+            if (string.IsNullOrWhiteSpace(product.Name) || product.Price <= 0)
+                return false;
+            return true;
         }
     }
 }

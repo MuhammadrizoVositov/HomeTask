@@ -32,7 +32,6 @@ namespace First.WebApi.Controllers
         }
 
         [HttpPost]
-        [Route("bu-post-uchun")]
         public async Task<IActionResult> ProductAsync(Product product) 
         {
            
@@ -40,7 +39,6 @@ namespace First.WebApi.Controllers
             return Ok(user);
         }
         [HttpPut]
-        [Route("bu-update-uchun")]
         public async Task<IActionResult> UpdateAsync(Product item) 
         {
             var a = _productRepository.UpdateAsync(item);
@@ -49,7 +47,6 @@ namespace First.WebApi.Controllers
             
         }
         [HttpDelete]
-        [Route("delete-uchun")]
         public async Task<IActionResult> DeleteAsync(Guid id) 
         {
             var b = await _productRepository.RemoveAsync(id);
