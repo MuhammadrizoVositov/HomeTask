@@ -13,9 +13,8 @@ namespace First.WebApi.Controllers
 #pragma warning
         private readonly IProductRepository _productRepository;
 
-        public ProductsController(IDataContext dataContext, IProductRepository productRepository)
+        public ProductsController( IProductRepository productRepository)
         {
-            _dataContext = dataContext;
             _productRepository = productRepository;
         }
 
